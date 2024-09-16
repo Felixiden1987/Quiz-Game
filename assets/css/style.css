@@ -1,21 +1,28 @@
 body {
     background-color: #3a3a3a;
-     
+
 }
+
 .heading {
     background-color: #ffffff;
     text-align: center;
-   
+    font-size: 70px;
+    margin-top: 80px;
+
+}
+main {
+    margin-top: 80px;
 }
 /* Quiz box styles */
 .quiz-game {
     background-color: #ffffff;
-    width: 90%; 
+    width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
     border-radius: 10px;
-    padding: 30px; 
+    padding: 30px;
 }
+
 /* Question area styles */
 .quiz-game h2 {
     font-size: 25px;
@@ -23,38 +30,54 @@ body {
     border-bottom: 1px solid #3a3a3a;
     text-align: center;
 }
-/* answer button styles */ 
+
+/* answer button styles */
 .btn {
     background: #ffffff;
     color: #3a3a3a;
-    border: 1px solid #3a3a3a; 
+    border: 1px solid #3a3a3a;
     width: 100%;
     font-size: 18px;
-    padding: 10px; 
+    padding: 10px;
     margin: 10px 0;
     cursor: pointer;
     border-radius: 4px;
     text-align: left;
 }
-/* button styles when hovered */ 
+
+/* button styles when hovered */
 .btn:hover {
     background: #3a3a3a;
     color: #ffffff;
 }
+
 .score-area {
     display: block;
     text-align: center;
 }
-/* next question button styles */ 
-#btn-next  {
+
+/* score number is green and incorrect number is red */
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+/* next question button styles */
+#btn-next {
     background: #3a3a3a;
     color: #ffffff;
     width: 100px;
     border: 0;
-    padding: 15px; 
+    padding: 15px;
     margin: 10px auto 0;
     border-radius: 4px;
-    display: block; 
-    font-weight: 500; 
+    /* hides button until question is answered */
+    display: none;
+    font-weight: 500;
     cursor: pointer;
 }
