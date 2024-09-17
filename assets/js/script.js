@@ -1,6 +1,7 @@
 /**
  * Questions for the quiz
  */
+
 const questions = [
     {
         question: "What is love? ___",
@@ -151,6 +152,7 @@ const questions = [
         ]
     },
 ];
+
 /**
  * Variables for elements 
  */
@@ -158,10 +160,42 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("btn-next");
+
 /**
- * Index starts at 0
+ * Question index starts at 0
  */
 let currentQuestionIndex = 0;
 let score = 0;
+
+/**
+ * Function to start the quiz
+ */
+function startQuiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestion();
+}
+/**
+ * Displays question
+ */
+function showQuestion(){
+    let currentQuestion = questions [currentQuestionIndex];
+    let questionNo = currentQuestionIndex +1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+/**
+ * Displays answers
+ */
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+});
+} 
+/**
+ * Calls the function to start quiz
+ */
+startQuiz();
 
 
