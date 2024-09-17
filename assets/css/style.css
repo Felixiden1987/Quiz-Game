@@ -1,6 +1,7 @@
 body {
     background-color: #727171;
-
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 .heading {
