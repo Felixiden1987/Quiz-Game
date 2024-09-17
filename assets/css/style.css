@@ -58,19 +58,8 @@ body {
 }
 
 .score-area {
-    display: block;
+    display: none;
     text-align: center;
-}
-
-/* score number is green and incorrect number is red */
-#score {
-    color: green;
-    font-weight: bold;
-}
-
-#incorrect {
-    color: red;
-    font-weight: bold;
 }
 
 /* next question button styles */
