@@ -1,18 +1,17 @@
 body {
-    background-color: #3a3a3a;
+    background-color: #727171;
 
 }
 
 .heading {
     background-color: #ffffff;
     text-align: center;
-    font-size: 70px;
-    margin-top: 80px;
+    font-size: 3.5rem;
+    margin-top: 0%;
+    width: 100%;
+    
+}
 
-}
-main {
-    margin-top: 80px;
-}
 /* Quiz box styles */
 .quiz-game {
     background-color: #ffffff;
