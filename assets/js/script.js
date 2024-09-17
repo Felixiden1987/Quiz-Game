@@ -225,9 +225,14 @@ function selectAnswer(e) {
     });
     nextButton.style.display = "block";
 }
+/**
+ * Shows your score after finishing all questions
+ */
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "Try again?";
+    nextButton.style.display = "block";
 }
 function handleNextButton() {
     currentQuestionIndex++;
