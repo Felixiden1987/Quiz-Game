@@ -1,6 +1,6 @@
 body {
     background-color: #727171;
-    color:#525252;
+    color: #525252;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -11,13 +11,13 @@ body {
     font-size: 3.5rem;
     margin-top: 0%;
     width: 100%;
-    
+
 }
 
 /* Quiz box styles */
 .quiz-game {
     background-color: #ffffff;
-    
+
     border-radius: 10px;
     box-sizing: border-box;
     width: 85%;
@@ -52,7 +52,7 @@ body {
 }
 
 /* button styles when hovered */
-.btn:hover {
+.btn:hover:not([disabled]) {
     background: #3a3a3a;
     color: #ffffff;
 }
@@ -86,4 +86,13 @@ body {
     display: none;
     font-weight: 500;
     cursor: pointer;
+}
+
+/* changes background of answers after you clicked them */
+.correct {
+    background: rgb(105, 240, 105);
+}
+
+.incorrect {
+    background: rgb(253, 93, 93);
 }

@@ -104,7 +104,7 @@ const questions = [
     {
         question: "Beat it, beat it, beat it, beat it, noone want's to be ___ ?",
         answers: [
-            { text: "Conceited", correct: false},
+            { text: "Conceited", correct: false },
             { text: "Deleted", correct: false },
             { text: "Unseated", correct: false },
             { text: "Defeated", correct: true },
@@ -170,36 +170,62 @@ let score = 0;
 /**
  * Function to start the quiz
  */
-function startQuiz(){
+function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
 }
 /**
- * Displays question and clears previous answers
+ * Displays question 
  */
-function showQuestion(){
+function showQuestion() {
     resetState();
-    let currentQuestion = questions [currentQuestionIndex];
-    let questionNo = currentQuestionIndex +1;
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-/**
- * Displays answers
- */
+    /**
+     * Displays answers
+     */
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButtons.appendChild(button);
-});
-} 
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+
+    });
+}
+/**
+ * Clears previous question
+ */
 function resetState() {
     nextButton.style.display = "none";
-    while(answerButtons.firstChild){
+    while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
+function selectAnswer(e) {
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if (isCorrect) {
+        selectedBtn.classList.add("correct");
+        score++;
+    } else {
+        selectedBtn.classList.add("incorrect");
+    }
+    Array.from(answerButtons.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
+        button.disabled = true;
+    });
+    nextButton.style.display = "block";
+}
+
 /**
  * Calls the function to start quiz
  */
