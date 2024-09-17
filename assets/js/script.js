@@ -177,9 +177,10 @@ function startQuiz(){
     showQuestion();
 }
 /**
- * Displays question
+ * Displays question and clears previous answers
  */
 function showQuestion(){
+    resetState();
     let currentQuestion = questions [currentQuestionIndex];
     let questionNo = currentQuestionIndex +1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
@@ -193,6 +194,12 @@ function showQuestion(){
         answerButtons.appendChild(button);
 });
 } 
+function resetState() {
+    nextButton.style.display = "none";
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+}
 /**
  * Calls the function to start quiz
  */
