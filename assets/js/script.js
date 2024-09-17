@@ -152,15 +152,16 @@ const questions = [
     },
 ];
 /**
- * variables for elements 
+ * Variables for elements 
  */
 
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("btn-next");
-
+/**
+ * Index starts at 0
+ */
 let currentQuestionIndex = 0;
 let score = 0;
-
 
 
