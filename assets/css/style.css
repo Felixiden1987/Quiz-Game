@@ -1,19 +1,25 @@
+
+
+
 body {
     background-color: #727171;
     color: #525252;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    margin-top: 3%;
+    margin-top: 0;
+    
+    
 }
 
 .heading {
     background-color: #fbf8d4;
     text-align: center;
-    font-size: 3em;
+    font-size: 45px;
+    letter-spacing: normal;
     margin-top: 0%;
     width: 100%;
     border-radius: 10px;
-    line-height: 140%;
+    vertical-align: baseline;
 }
 
 .logo {
@@ -25,13 +31,10 @@ body {
 /* Quiz box styles */
 .quiz-game {
     background-color: #fbf8d4;
-
     border-radius: 10px;
     box-sizing: border-box;
     width: 100%;
-    height: 70vh;
-    max-height: 450px;
-    max-width: 830px;
+    height: 65vh;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
@@ -94,4 +97,11 @@ body {
 
 .incorrect {
     background: rgb(253, 93, 93);
+}
+
+@media (max-width: 768px) {
+
+}
+@media (max-width: 1024px) {
+    
 }
