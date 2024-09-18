@@ -124,7 +124,7 @@ const questions = [
     {
         question: "Here we are now ___ ?",
         answers: [
-            { text: "we're contagius", correct: false },
+            { text: "We're contagius", correct: false },
             { text: "Entertain us", correct: true },
             { text: "We're strangers", correct: false },
             { text: "We're dangerous", correct: false },
@@ -134,10 +134,10 @@ const questions = [
     {
         question: "Don't go chasin' waterfalls, listen to the ___ that you're used to?",
         answers: [
-            { text: "Rivers and the streams", correct: true },
+            { text: "Rivers and the streams", correct: false },
             { text: "Rivers and the seas", correct: false },
             { text: "Rivers and the trees", correct: false },
-            { text: "Rivers and the lakes", correct: false },
+            { text: "Rivers and the lakes", correct: true },
 
         ]
     },
