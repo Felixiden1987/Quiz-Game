@@ -10,11 +10,15 @@ This site is targeted towards people who want to play a fun music quiz.
 
 ## Features 
 __Logo__
-- On the left side is the logo that also links to the first page.
-- In the middle is the title.
+- On the left side is the logo, that also links to the first page.
+- In the middle is the title "Finish The Lyrics.
 __Quiz__ 
 - The main part of the page is the quiz. It shows a question and 4 possible answers. It's up to the user to choose wich one they think is the correct answer.
-- Once the user chooses an answer and clicks on it, the background on the answer turns in to either green or red. 
+- Once the user chooses an answer and clicks on it, the background of the answer turns in to either green(correct) or red (incorrect).
+  If the answer that was provided by the user is incorrect, it will turn red, but the correct answer will also be shown in green.
+- "Next" button, this button will appear when the user has clicked on a answer. To continue the quiz, the user simply presses the "next-button"
+- Scoreboard, when all questions are answered, a scoreboard will appear and show the results of have many correct vs incorrect answers the user got.
+- "Try again" button, will be visible when the quiz is over and the results are shown. This will bring the questions back and the user can hava another try.  
 ![]()
 
 ## Testing 
