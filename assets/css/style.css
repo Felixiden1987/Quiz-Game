@@ -3,14 +3,16 @@ body {
     color: #525252;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    margin-top: 0%;
 }
 
 .heading {
     background-color: #ffffff;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top: 0%;
     width: 100%;
+    border-radius: 10px;
 
 }
 
@@ -20,18 +22,19 @@ body {
 
     border-radius: 10px;
     box-sizing: border-box;
-    width: 85%;
-    height: 65vh;
+    width: 90%;
+    height: 70vh;
     max-height: 450px;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+    
 }
 
 /* Question area styles */
 .quiz-game h2 {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     border-bottom: 1px solid #3a3a3a;
     text-align: center;
