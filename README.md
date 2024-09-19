@@ -12,6 +12,7 @@ This site is targeted towards people who want's to play a fun music quiz where y
 __Logo__
 - On the left side is the logo that also links to the first page (index.html).
 - In the middle is the title in a gray color with a light yellow background.
+
 __Quiz__ 
 - The main part of the page is the quiz. It shows a question and 4 possible answers. It's up to the user to choose wich one they think is the correct answer.
 - Once the user chooses an answer and clicks on it, the background of the answer turns into either green or red. 
