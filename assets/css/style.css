@@ -1,5 +1,4 @@
-
-
+/* General rules */
 
 body {
     background-color: #727171;
@@ -7,10 +6,11 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     margin-top: 0;
-    
-    
+
+
 }
 
+/* Title rules */
 .heading {
     background-color: #fbf8d4;
     text-align: center;
@@ -21,11 +21,11 @@ body {
     border-radius: 10px;
     vertical-align: baseline;
 }
-
+/* quiz-logo */
 .logo {
     height: 37px;
     width: 37px;
-    
+
 }
 
 /* Quiz box styles */
@@ -38,7 +38,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
-    
+
 }
 
 /* Question area styles */
@@ -90,7 +90,7 @@ body {
     cursor: pointer;
 }
 
-/* changes background of answers after you clicked them */
+/* changes background color of answers after you clicked them */
 .correct {
     background: rgb(105, 240, 105);
 }

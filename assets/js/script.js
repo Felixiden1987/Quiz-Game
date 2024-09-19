@@ -154,7 +154,7 @@ const questions = [
 ];
 
 /**
- * Variables for elements 
+ * Variables for quiz elements 
  */
 
 const questionElement = document.getElementById("question");
@@ -162,7 +162,7 @@ const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("btn-next");
 
 /**
- * Question index starts at 0
+ * Question index starts at 0, score is set to 0
  */
 let currentQuestionIndex = 0;
 let score = 0;
@@ -208,6 +208,9 @@ function resetState() {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
+/**
+ * Stores users correct/incorrect answers 
+ */
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
@@ -217,12 +220,18 @@ function selectAnswer(e) {
     } else {
         selectedBtn.classList.add("incorrect");
     }
+    /**
+     * Displays correct answer in green even if answer is incorrect
+     */
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
         button.disabled = true;
     });
+    /**
+     * Shows next button after user has clicked on a answer
+     */
     nextButton.style.display = "block";
 }
 /**
@@ -231,9 +240,15 @@ function selectAnswer(e) {
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    /**
+     * Shows try again button when questions are finished
+     */
     nextButton.innerHTML = "Try again?";
     nextButton.style.display = "block";
 }
+/**
+ * If there is another question, it will be displayed or else the score will show
+ */
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {

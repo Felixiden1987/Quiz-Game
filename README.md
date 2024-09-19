@@ -1,24 +1,20 @@
 # Finish The Lyrics
 
-The quiz is simple and fun.  
+This quiz is simple and fun.  
 
 Users of this page will find the quiz enjoyable and hopefully a bit challenging. 
 
-This site is targeted towards people who want to play a fun music quiz. 
+This site is targeted towards people who want's to play a fun music quiz where you need to finish the missing lyrics. 
 
-![Responsice Mockup]()
+![Responsice Mockup](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/mockup.png)
 
 ## Features 
 __Logo__
-- On the left side is the logo, that also links to the first page.
-- In the middle is the title "Finish The Lyrics.
+- On the left side is the logo that also links to the first page (index.html).
+- In the middle is the title in a gray color with a light yellow background.
 __Quiz__ 
 - The main part of the page is the quiz. It shows a question and 4 possible answers. It's up to the user to choose wich one they think is the correct answer.
-- Once the user chooses an answer and clicks on it, the background of the answer turns in to either green(correct) or red (incorrect).
-  If the answer that was provided by the user is incorrect, it will turn red, but the correct answer will also be shown in green.
-- "Next" button, this button will appear when the user has clicked on a answer. To continue the quiz, the user simply presses the "next-button"
-- Scoreboard, when all questions are answered, a scoreboard will appear and show the results of have many correct vs incorrect answers the user got.
-- "Try again" button, will be visible when the quiz is over and the results are shown. This will bring the questions back and the user can hava another try.  
+- Once the user chooses an answer and clicks on it, the background of the answer turns into either green or red. 
 ![]()
 
 ## Testing 
@@ -35,7 +31,7 @@ __Quiz__
 - No errors were found after the official (jigsaw) validator had gone through it.
 #### Accessibility
 - I confirmed that the fonts and colors i've used are easy to read and are accessible, after using the lighthouse tool in Chrome.
-![Accessibility]()
+![Accessibility](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/lighthouse.png)
 
 ## Deployment 
 
