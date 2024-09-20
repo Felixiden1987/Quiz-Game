@@ -1,4 +1,7 @@
 /**
+ * Code from Greatstack, see readme.md
+ */
+/**
  * Questions for the quiz
  */
 
