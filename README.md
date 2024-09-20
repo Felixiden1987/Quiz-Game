@@ -81,7 +81,7 @@ This site is targeted towards people who want's to play a fun music quiz where y
 ## Credits 
 
 ### Javascript 
-- The code for the quiz was taken off of this youtube-channel 
+- The code for the quiz was taken from this youtube-channel 
 [Greatstack](https://www.youtube.com/watch?v=PBcqGxrr9g8).
 - It had the basic quiz i wanted to make, and it was a great guide to follow and learn from when having limited time. 
 ### Content 
