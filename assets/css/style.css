@@ -90,7 +90,7 @@ body {
     cursor: pointer;
 }
 
-/* changes background color of answers after you clicked them */
+/* changes background-color of answers after you clicked them */
 .correct {
     background: rgb(105, 240, 105);
 }

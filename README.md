@@ -1,5 +1,3 @@
-Readme 
-
 # Finish The Lyrics
 
 This quiz is simple and fun.  
@@ -11,26 +9,11 @@ This site is targeted towards people who want's to play a fun music quiz where y
 ![Responsice Mockup](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/mockup.png)
 
 ## Features 
-<<<<<<< HEAD
 #### Logo & Title
-=======
-__Logo & Title__
->>>>>>> e8bee74 (add comments)
 - On the left side is the logo that also links to the first page (index.html).
 - In the middle is the title in a grey color with a light yellow background.
 
-<<<<<<< HEAD
 ![Logo](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/finish.png)
-=======
-![Logo] (https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/finish.png)
-
-__Quiz__ 
-- The main part of the page is the quiz. It shows a question and 4 possible answers. It's up to the user to choose which one they think is the correct answer.
-- Once the user chooses an answer and clicks on it, the background of the answer turns into either green or red. 
-
-![Quiz](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/quizredgreen.png)
-![Score](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/score.png)
->>>>>>> e8bee74 (add comments)
 
 #### Quiz 
 - The main part of the page is the quiz. It shows a question and 4 possible answers. It's up to the user to choose which one they think is the correct answer.
@@ -77,11 +60,7 @@ __Quiz__
 #### CSS
 - No errors were found after the official (jigsaw) validator had gone through it.
 #### JS
-<<<<<<< HEAD
 - No errors were found in jshint, only warnings that refers to versions before ES6.
-=======
-- No errors were found in jshint
->>>>>>> e8bee74 (add comments)
 #### Accessibility
 - I confirmed that the fonts and colors i've used are easy to read and are accessible, after using the lighthouse tool in Chrome.
 ![Accessibility](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/lighthouse.png)
@@ -103,9 +82,6 @@ __Quiz__
 - The code for the quiz was taken off of this youtube-channel 
 [Greatstack](https://www.youtube.com/watch?v=PBcqGxrr9g8).
 - It had the basic quiz i wanted to make, and it was a great guide to follow and learn from when having limited time. 
-=======
-[Greatstack](https://www.youtube.com/watch?v=PBcqGxrr9g8)
->>>>>>> e8bee74 (add comments)
 ### Content 
 - The text for the quiz is from a quiz i made years ago for midsummer.
 ### Media 
