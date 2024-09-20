@@ -25,7 +25,8 @@ This site is targeted towards people who want's to play a fun music quiz where y
 ![Score](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/score.png)
 ## Features left to implement
 - When there is time i would like to make the questions in the quiz to be showing randomly from the array.
-- 
+- A scoreboard that increases the score for correct and incorrect answers as the user is playing.
+- A small picture of the artist for that specific question to give a hint of the song. 
 ## Testing 
 - I have tested that the website works in different browsers: Chrome, Safari and Firefox.
 - I can confirm that the site is responsive and looks good on different standard sized devices. 
