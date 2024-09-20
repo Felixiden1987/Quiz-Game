@@ -23,7 +23,9 @@ This site is targeted towards people who want's to play a fun music quiz where y
 
 ![Quiz](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/quizredgreen.png)
 ![Score](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/score.png)
-
+## Features left to implement
+- When there is time i would like to make the questions in the quiz to be showing randomly from the array.
+- 
 ## Testing 
 - I have tested that the website works in different browsers: Chrome, Safari and Firefox.
 - I can confirm that the site is responsive and looks good on different standard sized devices. 
@@ -31,7 +33,7 @@ This site is targeted towards people who want's to play a fun music quiz where y
 - I have confirmed that the quiz works. The answer-buttons work and are changing color depending on if the answer is correct (green) or incorrect (red). 
 ## Bugs 
 #### Solved Bugs
-- I had one issue with html anchor tag:
+- When i tested the html in W3C validator, i had one issue with this anchor tag:
 - ```
   <a href="index.html" aria-label="Take user back to first page"><h1 class="heading">
 
@@ -56,7 +58,7 @@ This site is targeted towards people who want's to play a fun music quiz where y
 #### CSS
 - No errors were found after the official (jigsaw) validator had gone through it.
 #### JS
-- No errors were found in jshint
+- No errors were found in jshint, only warnings that refers to versions before ES6.
 #### Accessibility
 - I confirmed that the fonts and colors i've used are easy to read and are accessible, after using the lighthouse tool in Chrome.
 ![Accessibility](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/lighthouse.png)
