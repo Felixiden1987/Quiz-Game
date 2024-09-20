@@ -19,14 +19,17 @@ This site is targeted towards people who want's to play a fun music quiz where y
 
 #### Quiz 
 - The main part of the page is the quiz. It shows a question and 4 possible answers. It's up to the user to choose which one they think is the correct answer.
-- Once the user chooses an answer and clicks on it, the background of the answer turns into either green or red. 
+- Once the user chooses an answer and clicks on it, the background of the answer turns into either green or red.
+- Or in this case (image below), the user has selected the incorrect answer in red, but the correct answer is also displayed in green.
 
 ![Quiz](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/quizredgreen.png)
 ![Score](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/score.png)
 ## Features left to implement
 - When there is time i would like to make the questions in the quiz to be showing randomly from the array.
-- A scoreboard that increases the score for correct and incorrect answers as the user is playing.
-- A small picture of the artist for that specific question to give a hint of the song. 
+- A scoreboard that increases the score for correct and incorrect answers while the user is playing.
+- A small picture of the artist for that specific question to give a hint of the song.
+- A audio sample of the question with the missing lyrics from the question muted.
+- When audio sample is done, add a timer for how long the user has to complete the question. 
 ## Testing 
 - I have tested that the website works in different browsers: Chrome, Safari and Firefox.
 - I can confirm that the site is responsive and looks good on different standard sized devices. 
@@ -79,7 +82,7 @@ This site is targeted towards people who want's to play a fun music quiz where y
 
 ### Javascript 
 - The code for the quiz was taken off of this youtube-channel 
-[Greatstack](https://www.youtube.com/watch?v=PBcqGxrr9g8)
+[Greatstack](https://www.youtube.com/watch?v=PBcqGxrr9g8). It was a great guide to follow and learn from when having limited time. 
 ### Content 
 - The text for the quiz is from a quiz i made years ago for midsummer.
 ### Media 
