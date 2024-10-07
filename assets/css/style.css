@@ -68,7 +68,12 @@ body {
     background: #3a3a3a;
     color: #ffffff;
 }
-
+#timer {
+    text-align: center;
+    font-size: 23px;
+    color:rgb(253, 93, 93);
+    font-weight: 600;
+}
 .score-area {
     display: none;
     text-align: center;

@@ -163,12 +163,14 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("btn-next");
+const timerElement = document.getElementById("timer");
 
 /**
  * Question index starts at 0, score is set to 0
  */
 let currentQuestionIndex = 0;
 let score = 0;
+let timer;
 
 /**
  * Function to start the quiz
@@ -187,6 +189,7 @@ function showQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+    startTimer(20);
     /**
      * Displays answers
      */
@@ -203,10 +206,53 @@ function showQuestion() {
     });
 }
 /**
+ * Starts a countdown timer
+ */
+function startTimer(duration) {
+    let timeRemaining = duration;
+    timerElement.innerHTML = `Time remaining: ${timeRemaining} seconds`;
+
+    timer = setInterval(() => {
+        timeRemaining--;
+        timerElement.innerHTML = `Time remaining: ${timeRemaining} seconds`;
+
+        if (timeRemaining <= 0) {
+            clearInterval(timer);
+            /**
+             * Automatically select the answer as incorrect after time runs out 
+             */ 
+            selectAnswerAutomatically();
+        }
+    }, 1000);
+}
+/**
+ * Automatically selects an answer if the time runs out
+ */
+function selectAnswerAutomatically() {
+    Array.from(answerButtons.children).forEach(button => {
+        button.disabled = true;
+    });
+    nextButton.style.display = "block";
+    alert("Time's up! Moving to the next question.");
+    /** 
+     * Move to the next question
+     */
+    handleNextButton();  
+    
+}
+/**
  * Clears previous question
  */
 function resetState() {
     nextButton.style.display = "none";
+    /**
+     * Clear the timer when resetting state
+     */
+    clearInterval(timer); 
+    /**
+     * Clear the timer display
+     */
+    timerElement.innerHTML = '';
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
@@ -217,6 +263,10 @@ function resetState() {
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
+    /**
+     * Clear the timer when an answer is selected
+     */
+    clearInterval(timer);
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
