@@ -163,6 +163,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("btn-next");
+const startButton = document.getElementById("btn-start");
 const timerElement = document.getElementById("timer");
 
 /**
@@ -179,6 +180,7 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
+    startButton.style.display = "none";
     showQuestion();
 }
 /**
@@ -315,13 +317,15 @@ nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
     } else {
-        startQuiz();
+        startButton.style.display = "block";
     }
 });
 
 /**
  * Calls the function to start quiz
  */
-startQuiz();
+startButton.addEventListener("click", startQuiz);
+
+
 
 
