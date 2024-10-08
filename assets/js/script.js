@@ -180,6 +180,9 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
+    /**
+     * Hide start button
+     */
     startButton.style.display = "none";
     showQuestion();
 }
@@ -299,6 +302,12 @@ function showScore() {
      * Shows try again button when questions are finished
      */
     nextButton.innerHTML = "Try again?";
+    /**
+     * Redirect to index.html
+     */
+    nextButton.onclick = function() {
+        window.location.href = "index.html"; 
+    };
     nextButton.style.display = "block";
 }
 /**
@@ -317,12 +326,15 @@ nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
     } else {
+        /**
+         * Show start button again
+         */
         startButton.style.display = "block";
     }
 });
 
 /**
- * Calls the function to start quiz
+ * Calls the function to start quiz when clicking on the start button
  */
 startButton.addEventListener("click", startQuiz);
 
