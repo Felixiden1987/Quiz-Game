@@ -117,3 +117,16 @@ body {
 .incorrect {
     background: rgb(253, 93, 93);
 }
+
+@media (max-width: 414px) {
+    .quiz-game {
+        width: 100%;
+        
+    }
+}
+@media (max-width: 320px) {
+    .quiz-game {
+        width: 75%;
+        
+    }
+}
