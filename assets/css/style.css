@@ -90,6 +90,8 @@ body {
     font-size: large;
     cursor: pointer;
     text-align: center;
+    position: relative;
+    display:block
 }
 /* next question button styles */
 #btn-next {
