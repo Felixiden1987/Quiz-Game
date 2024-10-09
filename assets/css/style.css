@@ -71,13 +71,10 @@ body {
 #timer {
     text-align: center;
     font-size: 23px;
-    color:rgb(253, 93, 93);
+    color:#3a3a3a;
     font-weight: 600;
 }
-.score-area {
-    display: none;
-    text-align: center;
-}
+
 #btn-start {
     background: #3a3a3a;
     color: #ffffff;
@@ -115,7 +112,8 @@ body {
 }
 
 .incorrect {
-    background: rgb(253, 93, 93);
+    background: #fd0000;
+    color: #ffffff;
 }
 
 @media (max-width: 414px) {
