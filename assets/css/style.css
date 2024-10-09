@@ -119,12 +119,56 @@ body {
 @media (max-width: 414px) {
     .quiz-game {
         width: 100%;
-        
+        padding: 0;
     }
+    .quiz-game h2 {
+        font-size: 18px;
+    }
+    .heading {
+        font-size: large;
+    }
+    .logo {
+        width: 15px;
+        height: 15px;
+    }
+    .btn {
+        font-size: large;
+        padding: 0%;
+    }
+    #timer {
+        font-size: large;
+        font-weight: 400;
+    }
+    #btn-start {
+        font-size: medium;
+    }
+    
 }
 @media (max-width: 320px) {
     .quiz-game {
-        width: 75%;
-        
+        width: 100%;
+        padding: 0;
     }
+    .quiz-game h2 {
+        font-size: 18px;
+    }
+    .heading {
+        font-size: large;
+    }
+    .logo {
+        width: 15px;
+        height: 15px;
+    }
+    .btn {
+        font-size: large;
+        padding: 0%;
+    }
+    #timer {
+        font-size: large;
+        font-weight: 400;
+    }
+    #btn-start {
+        font-size: medium;
+    }
+    
 }
