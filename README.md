@@ -16,7 +16,7 @@ The quiz is about finishing the missing lyrics from popular songs.
 - In the middle is the title in a grey color with a light yellow background.
 - To the right side of the title is a icon of a music note.
 
-![Logo](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/finish.png)
+![Logo](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/landingpage.png)
 
 #### Quiz 
 - The main part of the page is the quiz. It shows a question and 4 possible answers. It's up to the user to choose which one they think is the correct answer.
@@ -25,7 +25,7 @@ The quiz is about finishing the missing lyrics from popular songs.
 - Once the user chooses an answer and clicks on it, the background of the answer turns into either green or red and the timer stops.
 - Or in this case (image below), the user has selected the incorrect answer in red, but the correct answer is also displayed in green.
 - When all questions are answered, the user will see how many correct answers the user got.  
-![Quiz](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/quizredgreen.png)
+![Quiz](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/incorrect.png)
 
 ## Features left to implement
 - When there is time i would like to make the questions in the quiz to be showing randomly from the array.
@@ -38,8 +38,8 @@ The quiz is about finishing the missing lyrics from popular songs.
   The functions are also working. I tested this with Chrome devtools device toolbar.
 - I have tested that the website works in different browsers: Chrome, Safari and Firefox.
 ### Testing validation
-- Html: No errors came up after the official W3C validator had gone through it. []()
-- CSS: No errors were found after the official (jigsaw) validator had gone through it. []()
+- Html: No errors came up after the official W3C validator had gone through it. ![Html](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/html-checker.png)
+- CSS: No errors were found after the official (jigsaw) validator had gone through it. ![CSS](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/css-checker.png)
 - JavaScript: No errors were found in jshint, only warnings that refers to versions before ES6. []()
 
 ### Manual test cases
@@ -66,6 +66,7 @@ The quiz is about finishing the missing lyrics from popular songs.
 - Result: Brings the user back to the first page view and showing the start quiz button again.
 ### Test accessability
 - I confirmed that the fonts and colors i've used are easy to read and are accessible, after using the lighthouse tool in Chrome.
+![Lighthouse](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/lighthouse.png)
 
 ## Bugs 
 #### Solved Bugs
