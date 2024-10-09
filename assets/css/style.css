@@ -148,6 +148,7 @@ body {
     .quiz-game {
         width: 100%;
         padding: 0;
+        height: 80vh;
     }
     .quiz-game h2 {
         font-size: 18px;
@@ -170,5 +171,7 @@ body {
     #btn-start {
         font-size: medium;
     }
-    
+    body {
+        margin-bottom: 0%;
+    }
 }
