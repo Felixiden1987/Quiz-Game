@@ -1,12 +1,10 @@
 # Finish The Lyrics
 
-Welcome to this uncomplicated and fun music quiz.  
+Welcome to this uncomplicated and fun music quiz! Experience how well you actually know the lyrics of some of the all time favorite hit songs.  
 
-I hope this page will bring you a enjoyable and hopefully a bit challenging, fun quiz! 
+This site is targeted towards people who want to relax and simply do something fun and easy-going! I hope it will be useful for people to de-stress and regain energy since many of us live a hectic life these days. 
 
-This site is targeted towards people who wants to relax and play a fun music quiz, and I hope it will be useful for people to de-stress. 
-
-The quiz is about finishing the missing lyrics from popular songs. 
+What is the quiz about? Simply find the missing lyrics from popular songs. Thats it! Fun AND easy. Not happy with your result? No problem! Take the quiz as many times as you want in order to become a lyrics master. 
 
 ![Responsice Mockup](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/mockup.png)
 
@@ -14,33 +12,51 @@ The quiz is about finishing the missing lyrics from popular songs.
 #### Logo & Title
 - On the left side is the logo that also links to the first page (index.html).
 - In the middle is the title in a grey color with a light yellow background.
-- To the right side of the title is a icon of a music note.
+- To the right side of the title is an icon of a music note.
 
 ![Logo](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/landingpage.png)
 
 #### Quiz 
 - The main part of the page is the quiz. It shows a question and 4 possible answers. It's up to the user to choose which one they think is the correct answer.
-- When the quiz is started by clicking the start quiz button, a countdown timer of 20 seconds starts.
-- The goal is to choose an answer before the time runs out.
+- When the user starts the quiz by clicking the start quiz button, a countdown timer of 20 seconds starts.
+- The goal is to choose an answer before the time runs out. Hopefully the correct one too.
 - Once the user chooses an answer and clicks on it, the background of the answer turns into either green or red and the timer stops.
-- Or in this case (image below), the user has selected the incorrect answer in red, but the correct answer is also displayed in green.
-- When all questions are answered, the user will see how many correct answers the user got.  
+- Or in this case (image below), the user has selected the incorrect answer in red, but the correct answer is displayed in green.
+- When all questions are answered, the user will see how many correct answers they got.
+- When the score is shown there will also be a "try again" button to give the user a chance to do the quiz again.
+   
 ![Quiz](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/incorrect.png)
+![Score](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/tryagain.png)
 
 ## Features left to implement
-- When there is time i would like to make the questions in the quiz to be showing randomly from the array.
+- When there is time I would like to make the questions in the quiz to be showing randomly from the array.
 - A scoreboard that increases the score for correct and incorrect answers while the user is playing.
 - A small picture of the artist for that specific question to give a hint of the song.
 - A audio sample of the question with the missing lyrics from the question muted. 
 ## Testing 
 ### Testing site responsiveness
 - I can confirm that the site is responsive and looks good on different standard sized devices. 
-  The functions are also working. I tested this with Chrome devtools device toolbar.
-- I have tested that the website works in different browsers: Chrome, Safari and Firefox.
+  I tested this with Chrome devtools device toolbar with different emulated devices.
+- I have tested that the website works and functions well in different browsers: Chrome, Safari and Firefox.
+- I have manually tested on Iphone 6 & 13 with good result.
+
 ### Testing validation
-- Html: No errors came up after the official W3C validator had gone through it. ![Html](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/html-checker.png)
-- CSS: No errors were found after the official (jigsaw) validator had gone through it. ![CSS](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/css-checker.png)
-- JavaScript: No errors were found in jshint, only warnings that refers to versions before ES6. []()
+- Html: No errors were returned when passing through the official [W3C validator](https://validator.w3.org/#validate_by_input)
+
+![Html](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/html-checker.png)
+
+- CSS: No errors were returned when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
+
+![CSS](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/css-checker2.png)
+
+- JavaScript: No errors were returned when passing through the official [Jshint validator](https://jshint.com/), only warnings that refers to versions before ES6.
+- The following metrics were returned:
+  - There are 14 functions in this file.
+  - Function with the largest signature takes 1 arguments, while the median is 0.
+  - Largest function has 9 statements in it, while the median is 4.5.
+  - The most complex function has a cyclomatic complexity value of 2 while the median is 1.5.
+
+![JavaScript](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/jshint1.png)
 
 ### Manual test cases
 
@@ -64,13 +80,14 @@ The quiz is about finishing the missing lyrics from popular songs.
 - The expected feature: Bring the user back to the first page view.
 - Tested by clicking on the logo.
 - Result: Brings the user back to the first page view and showing the start quiz button again.
-### Test accessability
-- I confirmed that the fonts and colors i've used are easy to read and are accessible, after using the lighthouse tool in Chrome.
+### Test accessibility
+- I confirm that the fonts and colors I've used are easy to read and are accessible. For this I used the lighthouse tool in Chrome.
+- I also used Wave.webaim and found no errors.
 ![Lighthouse](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/lighthouse.png)
-
+![Wave](https://github.com/Felixiden1987/Quiz-Game/blob/main/assets/images/wave2.png)
 ## Bugs 
 #### Solved Bugs
-- When i tested the html in W3C validator, i had one issue with this anchor tag:
+- When I tested the html in W3C validator, I had one issue with this anchor tag:
 - ```
   <a href="index.html" aria-label="Take user back to first page"><h1 class="heading">
 
@@ -106,7 +123,7 @@ The quiz is about finishing the missing lyrics from popular songs.
 ### Javascript 
 - The code for the quiz was taken off of this youtube-channel 
 [Greatstack](https://www.youtube.com/watch?v=PBcqGxrr9g8).
-- It had the basic quiz i wanted to make, and it was a great guide to follow and learn from when having limited time.
+- It had the basic quiz I wanted to make, and it was a great guide to follow and learn from when having limited time.
 - I have since received results on the project, altered the code and added more functions:
 - A "start quiz" button that allows the user to be familiar with the page before starting the timed quiz. 
 - A 20 second timer for every question, with the function of picking a incorrect answer if the time runs out.
