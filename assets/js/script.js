@@ -1,5 +1,5 @@
 /**
- * Code from Greatstack, see readme.md
+ * Code from Greatstack, then altered and added more functions, see readme.md
  */
 /**
  * Questions for the quiz
@@ -115,7 +115,7 @@ const questions = [
         ]
     },
     {
-        question: "Oh, i wanna dance with somebody, i wanna feel the ___ with somebody?",
+        question: "Oh, I wanna dance with somebody, I wanna feel the ___ with somebody?",
         answers: [
             { text: "Heat", correct: true },
             { text: "Seat", correct: false },
@@ -157,7 +157,8 @@ const questions = [
 ];
 
 /**
- * Variables for quiz elements 
+ * Variables for quiz elements
+ * startButton and timerElement are my own code 
  */
 
 const questionElement = document.getElementById("question");
@@ -211,6 +212,7 @@ function showQuestion() {
     });
 }
 /**
+ * My own code
  * Starts a countdown timer
  */
 function startTimer(duration) {
@@ -231,6 +233,7 @@ function startTimer(duration) {
     }, 1000);
 }
 /**
+ * My own code
  * Automatically selects an answer if the time runs out
  */
 function selectAnswerAutomatically() {
@@ -269,6 +272,7 @@ function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     /**
+     * Altered code
      * Clear the timer when an answer is selected
      */
     clearInterval(timer);
@@ -293,6 +297,7 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 /**
+ * Altered code
  * Shows your score after finishing all questions
  */
 function showScore() {
@@ -334,6 +339,7 @@ nextButton.addEventListener("click", () => {
 });
 
 /**
+ * Altered code 
  * Calls the function to start quiz when clicking on the start button
  */
 startButton.addEventListener("click", startQuiz);

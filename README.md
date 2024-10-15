@@ -109,7 +109,7 @@ The quiz is about finishing the missing lyrics from popular songs.
 - It had the basic quiz i wanted to make, and it was a great guide to follow and learn from when having limited time.
 - I have since received results on the project, altered the code and added more functions:
 - A "start quiz" button that allows the user to be familiar with the page before starting the timed quiz. 
-- A 20 second timer for every question, with the function of choosing a random answer if the time runs out.
+- A 20 second timer for every question, with the function of picking a incorrect answer if the time runs out.
 - A redirect function to the "try again" button to bring the user back to the first page view.
 ### Content 
 - The text for the quiz is from a music-quiz i made years ago for midsummer.
